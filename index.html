@@ -309,6 +309,7 @@
             border: 4px solid #000000;
             box-shadow: 12px 12px 0px #000000;
             padding: 40px 30px;
+            margin-bottom: 80px;
         }
 
         .pricing-calculator h2 {
@@ -401,6 +402,76 @@
             letter-spacing: 1px;
         }
 
+        /* Footer */
+        .footer {
+            background: #000000;
+            color: #FFFFFF;
+            border: 4px solid #000000;
+            box-shadow: 12px 12px 0px #FF5E2E;
+            padding: 60px 40px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .footer-brand {
+            font-family: 'Space Grotesk', Arial Black, sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            color: #A9FBD7;
+            margin-bottom: 20px;
+        }
+
+        .footer-tagline {
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #FF5E2E;
+            margin-bottom: 40px;
+        }
+
+        .footer-redirect {
+            background: #A9FBD7;
+            color: #000000;
+            border: 4px solid #A9FBD7;
+            box-shadow: 6px 6px 0px #FF5E2E;
+            padding: 20px 40px;
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .footer-redirect:hover {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0px #FF5E2E;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .footer-info {
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #CCCCCC;
+            line-height: 1.6;
+        }
+
+        .footer-info strong {
+            color: #A9FBD7;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .container {
@@ -422,6 +493,19 @@
             
             .calc-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .footer {
+                padding: 40px 20px;
+            }
+
+            .footer-brand {
+                font-size: 28px;
+            }
+
+            .footer-redirect {
+                padding: 15px 30px;
+                font-size: 16px;
             }
         }
 
@@ -614,6 +698,23 @@
         </div>
     </div>
 
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-brand">QUICKBRAND NG</div>
+        <div class="footer-tagline">DOMINATE YOUR MARKET TODAY</div>
+        
+        <a href="https://immanuelaziba.github.io/quickbrandng" class="footer-redirect" target="_blank">
+            🚀 EXPLORE ALL SERVICES
+        </a>
+        
+        <div class="footer-info">
+            <strong>Ready to dominate your competition?</strong><br>
+            Visit our main site for the complete QuickBrand NG experience.<br>
+            LOGO DESIGN • BRAND STRATEGY • WEB DEVELOPMENT • MARKETING MATERIALS<br><br>
+            <strong>© 2025 QUICKBRAND NG</strong> - CRUSHING THE COMPETITION SINCE DAY ONE
+        </div>
+    </div>
+
     <script>
         function updatePrice() {
             const basePackage = parseInt(document.getElementById('basePackage').value);
@@ -714,28 +815,6 @@ CLIENT CONTACT FOR UPDATES: ___________
 "ONLY 3 RUSH SLOTS LEFT TODAY. FIRST COME, FIRST SERVED. DON'T GET LEFT BEHIND."
             `;
             
-            const newWindow = window.open('', '_blank');
-            newWindow.document.write(`<pre style="font-family: 'Inter', Arial; padding: 30px; background: #A9FBD7; margin: 20px; border: 4px solid #000000; box-shadow: 8px 8px 0px #000000; font-weight: 600; color: #000000;">${templates}</pre>`);
-        }
-
-        function showPricing() {
-            alert('USE THE DYNAMIC PRICING CALCULATOR BELOW TO CRUSH YOUR COMPETITION WITH PERFECT PRICING!');
-            document.querySelector('.pricing-calculator').scrollIntoView({behavior: 'smooth'});
-        }
-
-        // Initialize price calculation
-        updatePrice();
-
-        // Add some interactive glitch effects
-        setInterval(() => {
-            const glitchElements = document.querySelectorAll('.glitch-text');
-            glitchElements.forEach(el => {
-                el.style.animation = 'none';
-                setTimeout(() => {
-                    el.style.animation = 'glitch 3s infinite';
-                }, 10);
-            });
-        }, 10000);
-    </script>
-</body>
-</html>
+                const newWindow = window.open('', '_blank');
+                newWindow.document.write(`<pre style="font-family: 'Inter', Arial; padding: 30px; background: #A9FBD7; margin: 20px; border: 4px solid #000000; box-shadow: 8px 8px 0px #000000; font-weight: 600; color: #000000;">${templates}</pre>`);
+            }
