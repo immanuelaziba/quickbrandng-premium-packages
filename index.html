@@ -509,7 +509,315 @@
             }
         }
 
-        /* Glitch Animation for Headlines */
+        /* Custom Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: #FFFFFF;
+            border: 4px solid #000000;
+            box-shadow: 12px 12px 0px #FF5E2E;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .modal-title {
+            font-family: 'Space Grotesk', Arial Black, sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .modal-package {
+            background: #A9FBD7;
+            border: 4px solid #000000;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .modal-package-name {
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .modal-details {
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .modal-button {
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 15px 30px;
+            border: 4px solid #000000;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .modal-confirm {
+            background: #FF5E2E;
+            color: #FFFFFF;
+            box-shadow: 6px 6px 0px #000000;
+        }
+
+        .modal-confirm:hover {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0px #000000;
+        }
+
+        .modal-cancel {
+            background: #F5F5F5;
+            color: #000000;
+            box-shadow: 6px 6px 0px #CCCCCC;
+        }
+
+        .modal-cancel:hover {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0px #CCCCCC;
+        }
+
+        /* Client Brief Form Styles */
+        .brief-form-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .brief-form-content {
+            background: #FFFFFF;
+            border: 4px solid #000000;
+            box-shadow: 12px 12px 0px #FF5E2E;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .brief-form-title {
+            font-family: 'Space Grotesk', Arial Black, sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            color: #000000;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .brief-form-section {
+            background: #F5F5F5;
+            border: 4px solid #000000;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .brief-form-section h3 {
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #FF5E2E;
+            margin-bottom: 15px;
+        }
+
+        .brief-form-input {
+            background: #FFFFFF;
+            border: 4px solid #000000;
+            padding: 12px;
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .brief-form-input:focus {
+            outline: none;
+            box-shadow: 4px 4px 0px #A9FBD7;
+        }
+
+        .brief-form-textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .brief-form-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .brief-form-button {
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 15px 30px;
+            border: 4px solid #000000;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .brief-generate {
+            background: #A9FBD7;
+            color: #000000;
+            box-shadow: 6px 6px 0px #000000;
+        }
+
+        .brief-generate:hover {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0px #000000;
+        }
+
+        .brief-close {
+            background: #F5F5F5;
+            color: #000000;
+            box-shadow: 6px 6px 0px #CCCCCC;
+        }
+
+        .brief-close:hover {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0px #CCCCCC;
+        }
+
+        /* Timeline Modal Styles */
+        .timeline-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .timeline-content {
+            background: #FF5E2E;
+            color: #FFFFFF;
+            border: 4px solid #000000;
+            box-shadow: 12px 12px 0px #000000;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .timeline-title {
+            font-family: 'Space Grotesk', Arial Black, sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+        }
+
+        .timeline-grid {
+            display: grid;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item {
+            background: #FFFFFF;
+            color: #000000;
+            border: 4px solid #000000;
+            padding: 15px;
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 600;
+        }
+
+        .timeline-package {
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .timeline-time {
+            font-size: 18px;
+            color: #FF5E2E;
+        }
+
+        .timeline-close {
+            background: #000000;
+            color: #FFFFFF;
+            border: 4px solid #FFFFFF;
+            box-shadow: 6px 6px 0px #FFFFFF;
+            padding: 15px 30px;
+            font-family: 'Inter', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .timeline-close:hover {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0px #FFFFFF;
+        }
+
+        @media (max-width: 768px) {
+            .brief-form-content {
+                padding: 30px 20px;
+            }
+            
+            .brief-form-buttons {
+                flex-direction: column;
+            }
+            
+            .timeline-content {
+                padding: 30px 20px;
+            }
+        }
         @keyframes glitch {
             0%, 100% { transform: translate(0); }
             20% { transform: translate(-2px, 2px); }
@@ -642,17 +950,12 @@
                 <div class="tool-card">
                     <h3>📋 CLIENT BRIEF</h3>
                     <p>GENERATE COMPREHENSIVE BRIEFS FOR URGENT PROJECTS</p>
-                    <button class="brutal-button brutal-button-secondary" onclick="generateBrief()">CREATE BRIEF</button>
+                    <button class="brutal-button brutal-button-secondary" onclick="showClientBrief()">CREATE BRIEF</button>
                 </div>
                 <div class="tool-card">
                     <h3>⏰ TIMELINE CALC</h3>
                     <p>CALCULATE DELIVERY TIMES FOR RUSH ORDERS</p>
-                    <button class="brutal-button brutal-button-secondary" onclick="calculateTimeline()">CALCULATE</button>
-                </div>
-                <div class="tool-card">
-                    <h3>💬 WHATSAPP PITCH</h3>
-                    <p>READY-TO-SEND PITCH MESSAGES</p>
-                    <button class="brutal-button brutal-button-secondary" onclick="showTemplates()">VIEW TEMPLATES</button>
+                    <button class="brutal-button brutal-button-secondary" onclick="showTimeline()">CALCULATE</button>
                 </div>
                 <div class="tool-card">
                     <h3>💰 PRICE CALC</h3>
@@ -698,6 +1001,121 @@
         </div>
     </div>
 
+    <!-- Client Brief Form Modal -->
+    <div id="clientBriefModal" class="brief-form-overlay">
+        <div class="brief-form-content">
+            <div class="brief-form-title">🎯 URGENT PROJECT BRIEF</div>
+            
+            <form id="clientBriefForm">
+                <div class="brief-form-section">
+                    <h3>📋 CLIENT DETAILS</h3>
+                    <input type="text" class="brief-form-input" placeholder="COMPANY NAME" id="companyName" required>
+                    <input type="text" class="brief-form-input" placeholder="INDUSTRY" id="industry" required>
+                    <input type="text" class="brief-form-input" placeholder="CONTACT PERSON" id="contactPerson" required>
+                    <input type="text" class="brief-form-input" placeholder="PHONE/EMAIL" id="contactInfo" required>
+                </div>
+
+                <div class="brief-form-section">
+                    <h3>⚡ PROJECT REQUIREMENTS</h3>
+                    <select class="brief-form-input" id="packageSelected" required>
+                        <option value="">SELECT PACKAGE</option>
+                        <option value="URGENT BRAND RUSH">URGENT BRAND RUSH (₦35,000)</option>
+                        <option value="SAME-DAY BRAND LAUNCH">SAME-DAY BRAND LAUNCH (₦85,000)</option>
+                        <option value="EMERGENCY COMPLETE REBRAND">EMERGENCY COMPLETE REBRAND (₦180,000)</option>
+                    </select>
+                    <textarea class="brief-form-input brief-form-textarea" placeholder="SPECIFIC NEEDS & REQUIREMENTS" id="specificNeeds"></textarea>
+                    <input type="text" class="brief-form-input" placeholder="BRAND PERSONALITY (e.g., BOLD, PROFESSIONAL, MODERN)" id="brandPersonality">
+                    <input type="text" class="brief-form-input" placeholder="TARGET AUDIENCE" id="targetAudience">
+                </div>
+
+                <div class="brief-form-section">
+                    <h3>🚨 URGENCY FACTORS</h3>
+                    <input type="text" class="brief-form-input" placeholder="REASON FOR RUSH" id="rushReason" required>
+                    <input type="datetime-local" class="brief-form-input" id="criticalDeadline" required>
+                    <textarea class="brief-form-input brief-form-textarea" placeholder="CONSEQUENCES OF DELAY" id="delayConsequences"></textarea>
+                </div>
+
+                <div class="brief-form-section">
+                    <h3>💰 INVESTMENT DETAILS</h3>
+                    <select class="brief-form-input" id="paymentMethod" required>
+                        <option value="">PAYMENT METHOD</option>
+                        <option value="BANK TRANSFER">BANK TRANSFER</option>
+                        <option value="PAYSTACK">PAYSTACK (CARD/BANK)</option>
+                        <option value="CASH">CASH</option>
+                    </select>
+                    <select class="brief-form-input" id="depositReceived">
+                        <option value="NO">50% DEPOSIT RECEIVED: NO</option>
+                        <option value="YES">50% DEPOSIT RECEIVED: YES</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="brief-form-buttons">
+                <button type="button" class="brief-form-button brief-generate" onclick="sendToWhatsApp()">
+                    📱 SEND TO WHATSAPP
+                </button>
+                <button type="button" class="brutal-button brutal-button-secondary" onclick="generateBriefSummary()" style="margin: 0; width: auto; padding: 15px 20px; font-size: 14px;">
+                    📄 VIEW BRIEF
+                </button>
+                <button type="button" class="brief-form-button brief-close" onclick="closeBriefForm()">
+                    CLOSE
+                </button>
+            </div>
+            
+            <!-- Print Options (hidden by default) -->
+            <div id="printOptions" style="display: none; margin-top: 20px; text-align: center;">
+                <div style="background: #A9FBD7; border: 4px solid #000000; padding: 20px; margin-bottom: 15px;">
+                    <div style="font-family: 'Inter', Arial; font-weight: 900; font-size: 16px; text-transform: uppercase; color: #000000; margin-bottom: 15px;">
+                        💾 SAVE YOUR BRIEF
+                    </div>
+                    <button type="button" class="brutal-button" onclick="printAsPDF()" style="margin: 5px; width: auto; padding: 12px 20px; font-size: 14px;">
+                        📄 SAVE AS PDF
+                    </button>
+                    <button type="button" class="brutal-button brutal-button-secondary" onclick="printAsPNG()" style="margin: 5px; width: auto; padding: 12px 20px; font-size: 14px;">
+                        🖼️ SAVE AS IMAGE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline Modal -->
+    <div id="timelineModal" class="timeline-overlay">
+        <div class="timeline-content">
+            <div class="timeline-title">⏰ DELIVERY TIMELINE</div>
+            <div id="timelineGrid" class="timeline-grid">
+                <!-- Timeline items will be inserted here -->
+            </div>
+            <div style="margin-bottom: 20px; font-family: 'Inter', Arial; font-weight: 600; font-size: 14px;">
+                CURRENT TIME: <span id="currentTime"></span>
+            </div>
+            <div style="margin-bottom: 30px; font-family: 'Inter', Arial; font-weight: 900; font-size: 16px; text-transform: uppercase;">
+                STOP WAITING. START DOMINATING.
+            </div>
+            <button class="timeline-close" onclick="closeTimelineModal()">
+                CLOSE TIMELINE
+            </button>
+        </div>
+    </div>
+
+    <!-- Custom Modal -->
+    <div id="packageModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-title">🚀 READY TO DOMINATE?</div>
+            <div id="modalPackageInfo" class="modal-package">
+                <!-- Package info will be inserted here -->
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-button modal-confirm" onclick="confirmPurchase()">
+                    SECURE PAYMENT
+                </button>
+                <button class="modal-button modal-cancel" onclick="closeModal()">
+                    REVIEW OPTIONS
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <div class="footer">
         <div class="footer-brand">QUICKBRAND NG</div>
@@ -725,96 +1143,282 @@
             document.getElementById('finalPrice').textContent = `FINAL PRICE: ₦${finalPrice.toLocaleString()}`;
         }
 
+        let currentPackageUrl = '';
+
         function selectPackage(packageType) {
             const packages = {
                 rush: {
                     name: "URGENT BRAND RUSH",
                     price: "₦35,000",
-                    delivery: "6 HOURS"
+                    delivery: "6 HOURS",
+                    url: "https://paystack.shop/quickbrandng/urgent-brand-rush"
                 },
                 launch: {
                     name: "SAME-DAY BRAND LAUNCH", 
                     price: "₦85,000",
-                    delivery: "12 HOURS"
+                    delivery: "12 HOURS",
+                    url: "https://paystack.shop/quickbrandng/same-day-brand-launch"
                 },
                 complete: {
                     name: "EMERGENCY COMPLETE REBRAND",
                     price: "₦180,000", 
-                    delivery: "12 HOURS"
+                    delivery: "12 HOURS",
+                    url: "https://paystack.shop/quickbrandng/emergency-complete-rebrand"
                 }
             };
 
             const selected = packages[packageType];
-            alert(`PACKAGE SELECTED: ${selected.name}\nPRICE: ${selected.price}\nDELIVERY: ${selected.delivery}\n\nWHATSAPP US NOW TO SECURE YOUR SLOT!\n+234-XXX-XXXX-XXX`);
+            currentPackageUrl = selected.url;
+            
+            // Update modal content
+            document.getElementById('modalPackageInfo').innerHTML = `
+                <div class="modal-package-name">${selected.name}</div>
+                <div class="modal-details">PRICE: ${selected.price}</div>
+                <div class="modal-details">DELIVERY: ${selected.delivery}</div>
+            `;
+            
+            // Show modal
+            document.getElementById('packageModal').style.display = 'flex';
         }
 
-        function generateBrief() {
-            const brief = `
-🎯 QUICKBRAND NG - URGENT PROJECT BRIEF
+        function confirmPurchase() {
+            window.open(currentPackageUrl, '_blank');
+            closeModal();
+        }
+
+        function closeModal() {
+            document.getElementById('packageModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('packageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        function showClientBrief() {
+            document.getElementById('clientBriefModal').style.display = 'flex';
+        }
+
+        function closeBriefForm() {
+            document.getElementById('clientBriefModal').style.display = 'none';
+        }
+
+        function sendToWhatsApp() {
+            // Get form values
+            const formData = getFormData();
+            
+            // Validate required fields
+            if (!formData.companyName || !formData.contactPerson || !formData.rushReason || !formData.packageSelected) {
+                alert('❌ PLEASE FILL IN ALL REQUIRED FIELDS:\n• Company Name\n• Contact Person\n• Package Selected\n• Reason for Rush');
+                return;
+            }
+            
+            // Format WhatsApp message
+            const whatsappMessage = `🎯 *QUICKBRAND NG - URGENT PROJECT BRIEF*
+Generated: ${new Date().toLocaleString()}
+
+📋 *CLIENT DETAILS:*
+• Company: ${formData.companyName}
+• Industry: ${formData.industry || 'Not specified'}
+• Contact: ${formData.contactPerson}
+• Phone/Email: ${formData.contactInfo || 'Not provided'}
+
+⚡ *PROJECT REQUIREMENTS:*
+• Package: ${formData.packageSelected}
+• Specific Needs: ${formData.specificNeeds || 'Standard package requirements'}
+• Brand Style: ${formData.brandPersonality || 'To be discussed'}
+• Target Audience: ${formData.targetAudience || 'To be defined'}
+
+🚨 *URGENCY FACTORS:*
+• Rush Reason: ${formData.rushReason}
+• Critical Deadline: ${formData.criticalDeadline || 'ASAP'}
+• Delay Impact: ${formData.delayConsequences || 'Business critical'}
+
+💰 *PAYMENT:*
+• Method: ${formData.paymentMethod || 'To be arranged'}
+• 50% Deposit: ${formData.depositReceived}
+
+⏰ *TIMELINE:* SAME DAY / RUSH DELIVERY
+🚀 *STATUS:* READY TO DOMINATE THE COMPETITION!
+
+_Generated via QuickBrand NG Premium Packages_`;
+
+            // Encode message for WhatsApp URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // Replace with your actual WhatsApp number
+            const whatsappNumber = '2348123456789'; // Update this with your real number
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Show print options
+            document.getElementById('printOptions').style.display = 'block';
+        }
+
+        function getFormData() {
+            return {
+                companyName: document.getElementById('companyName').value,
+                industry: document.getElementById('industry').value,
+                contactPerson: document.getElementById('contactPerson').value,
+                contactInfo: document.getElementById('contactInfo').value,
+                packageSelected: document.getElementById('packageSelected').value,
+                specificNeeds: document.getElementById('specificNeeds').value,
+                brandPersonality: document.getElementById('brandPersonality').value,
+                targetAudience: document.getElementById('targetAudience').value,
+                rushReason: document.getElementById('rushReason').value,
+                criticalDeadline: document.getElementById('criticalDeadline').value,
+                delayConsequences: document.getElementById('delayConsequences').value,
+                paymentMethod: document.getElementById('paymentMethod').value,
+                depositReceived: document.getElementById('depositReceived').value
+            };
+        }
+
+        function generateBriefSummary() {
+            const formData = getFormData();
+            
+            // Generate formatted brief
+            const brief = `🎯 QUICKBRAND NG - URGENT PROJECT BRIEF
+Generated: ${new Date().toLocaleString()}
 
 📋 CLIENT DETAILS:
-COMPANY NAME: ___________
-INDUSTRY: ___________
-CONTACT: ___________
-DEADLINE: ___________
+COMPANY NAME: ${formData.companyName || '___________'}
+INDUSTRY: ${formData.industry || '___________'}
+CONTACT PERSON: ${formData.contactPerson || '___________'}
+CONTACT INFO: ${formData.contactInfo || '___________'}
 
 ⚡ PROJECT REQUIREMENTS:
-PACKAGE SELECTED: ___________
-SPECIFIC NEEDS: ___________
-BRAND PERSONALITY: ___________
-TARGET AUDIENCE: ___________
+PACKAGE SELECTED: ${formData.packageSelected || '___________'}
+SPECIFIC NEEDS: ${formData.specificNeeds || '___________'}
+BRAND PERSONALITY: ${formData.brandPersonality || '___________'}
+TARGET AUDIENCE: ${formData.targetAudience || '___________'}
 
 🚨 URGENCY FACTORS:
-REASON FOR RUSH: ___________
-CRITICAL DEADLINE: ___________
-CONSEQUENCES OF DELAY: ___________
+REASON FOR RUSH: ${formData.rushReason || '___________'}
+CRITICAL DEADLINE: ${formData.criticalDeadline || '___________'}
+CONSEQUENCES OF DELAY: ${formData.delayConsequences || '___________'}
 
 💰 INVESTMENT APPROVED:
-PACKAGE PRICE: ___________
-PAYMENT METHOD: ___________
-50% DEPOSIT RECEIVED: YES/NO
+PAYMENT METHOD: ${formData.paymentMethod || '___________'}
+50% DEPOSIT RECEIVED: ${formData.depositReceived || 'NO'}
 
 ⏰ TIMELINE CONFIRMED:
-START TIME: ___________
-DELIVERY TIME: ___________
-CLIENT CONTACT FOR UPDATES: ___________
-            `;
+START TIME: ${new Date().toLocaleString()}
+DELIVERY COMMITMENT: SAME DAY / RUSH DELIVERY
+CLIENT CONTACT FOR UPDATES: ${formData.contactInfo || '___________'}
+
+STATUS: READY TO DOMINATE THE COMPETITION`;
             
+            // Open in new window for viewing
             const newWindow = window.open('', '_blank');
-            newWindow.document.write(`<pre style="font-family: 'Inter', Arial; padding: 30px; background: #F5F5F5; margin: 20px; border: 4px solid #000000; box-shadow: 8px 8px 0px #FF5E2E; font-weight: 600;">${brief}</pre>`);
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>QuickBrand NG - Project Brief</title>
+                    <style>
+                        body { font-family: 'Courier New', monospace; padding: 30px; background: #F5F5F5; margin: 0; }
+                        .brief-container { background: #FFFFFF; border: 4px solid #000000; box-shadow: 8px 8px 0px #FF5E2E; padding: 30px; font-weight: 600; max-width: 800px; margin: 0 auto; }
+                        .brief-header { background: #A9FBD7; border: 4px solid #000000; padding: 20px; margin: -30px -30px 30px -30px; text-align: center; font-weight: 900; }
+                        @media print { body { background: white; } .brief-container { box-shadow: none; border: 2px solid #000000; } }
+                    </style>
+                </head>
+                <body>
+                    <div class="brief-container">
+                        <div class="brief-header">QUICKBRAND NG - PROJECT BRIEF</div>
+                        <pre style="white-space: pre-wrap; font-family: inherit; margin: 0;">${brief}</pre>
+                    </div>
+                </body>
+                </html>
+            `);
+            
+            // Show print options
+            document.getElementById('printOptions').style.display = 'block';
         }
 
-        function calculateTimeline() {
+        function printAsPDF() {
+            // Since we can't directly generate PDFs in the browser without external libraries,
+            // we'll open the brief in a new window optimized for printing to PDF
+            generateBriefSummary();
+            
+            // Provide instructions
+            setTimeout(() => {
+                alert('📄 TO SAVE AS PDF:\n\n1. Press Ctrl+P (or Cmd+P on Mac)\n2. Select "Save as PDF" as destination\n3. Click Save\n\n✅ Your brief will be saved as a PDF file!');
+            }, 1000);
+        }
+
+        function printAsPNG() {
+            // For PNG, we'll use the browser's built-in screenshot capability
+            alert('🖼️ TO SAVE AS IMAGE:\n\n1. Press F12 to open Developer Tools\n2. Press Ctrl+Shift+P (or Cmd+Shift+P on Mac)\n3. Type "screenshot" and select "Capture full size screenshot"\n4. The image will download automatically\n\nOR use your system\'s screenshot tool (Snipping Tool on Windows, Command+Shift+4 on Mac)');
+            
+            // Also open the brief for screenshotting
+            generateBriefSummary();
+        }
+
+        function showTimeline() {
             const startTime = new Date();
             const rushDelivery = new Date(startTime.getTime() + (6 * 60 * 60 * 1000));
-            const sameDay = new Date(startTime.getTime() + (12 * 60 * 60 * 1000));
+            const sameDayDelivery = new Date(startTime.getTime() + (12 * 60 * 60 * 1000));
             
-            alert(`⏰ DELIVERY TIMELINE:\n\n⚡ RUSH DELIVERY: ${rushDelivery.toLocaleTimeString()}\n🚀 SAME-DAY: ${sameDay.toLocaleTimeString()}\n💥 COMPLETE REBRAND: ${sameDay.toLocaleTimeString()}\n\nCURRENT TIME: ${startTime.toLocaleTimeString()}\n\nSTOP WAITING. START DOMINATING.`);
-        }
-
-        function showTemplates() {
-            const templates = `
-📱 QUICKBRAND NG - WHATSAPP PITCH TEMPLATES
-
-⚡ RUSH PACKAGE PITCH:
-"BRAND EMERGENCY? COMPLETE PROFESSIONAL IDENTITY BY 6PM TODAY - ₦35K. LOGO + COLORS + TEMPLATES. DM TO START DOMINATING!"
-
-🚀 LAUNCH PACKAGE PITCH:
-"CLIENT MEETING TOMORROW? GET BRANDED WEBSITE LIVE TODAY! LOGO + SITE + BUSINESS CARDS - ₦85K. STOP LOSING TO COMPETITORS!"
-
-💥 COMPLETE PACKAGE PITCH:
-"INVESTOR PITCH TOMORROW? FULL REBRAND IN 12 HOURS! LOGO + WEBSITE + MARKETING KIT - ₦180K. SECURE YOUR FUNDING!"
-
-📞 FOLLOW-UP TEMPLATE:
-"STILL THINKING? EVERY HOUR COSTS YOU CUSTOMERS. YOUR COMPETITORS AREN'T WAITING. SECURE YOUR SLOT NOW!"
-
-🎯 CLOSING TEMPLATE:
-"READY TO DOMINATE YOUR MARKET? CHOOSE YOUR PACKAGE AND LET'S CRUSH THE COMPETITION TODAY!"
-
-🚨 URGENCY TEMPLATE:
-"ONLY 3 RUSH SLOTS LEFT TODAY. FIRST COME, FIRST SERVED. DON'T GET LEFT BEHIND."
+            document.getElementById('currentTime').textContent = startTime.toLocaleTimeString();
+            
+            document.getElementById('timelineGrid').innerHTML = `
+                <div class="timeline-item">
+                    <div class="timeline-package">⚡ RUSH DELIVERY</div>
+                    <div class="timeline-time">${rushDelivery.toLocaleTimeString()}</div>
+                    <div>URGENT BRAND RUSH PACKAGE</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-package">🚀 SAME-DAY LAUNCH</div>
+                    <div class="timeline-time">${sameDayDelivery.toLocaleTimeString()}</div>
+                    <div>BRAND LAUNCH PACKAGE</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-package">💥 COMPLETE REBRAND</div>
+                    <div class="timeline-time">${sameDayDelivery.toLocaleTimeString()}</div>
+                    <div>EMERGENCY COMPLETE REBRAND</div>
+                </div>
             `;
             
-                const newWindow = window.open('', '_blank');
-                newWindow.document.write(`<pre style="font-family: 'Inter', Arial; padding: 30px; background: #A9FBD7; margin: 20px; border: 4px solid #000000; box-shadow: 8px 8px 0px #000000; font-weight: 600; color: #000000;">${templates}</pre>`);
+            document.getElementById('timelineModal').style.display = 'flex';
+        }
+
+        function closeTimelineModal() {
+            document.getElementById('timelineModal').style.display = 'none';
+        }
+
+        function showPricing() {
+            document.querySelector('.pricing-calculator').scrollIntoView({behavior: 'smooth'});
+        }
+
+        // Close modals when clicking outside
+        document.getElementById('clientBriefModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeBriefForm();
             }
+        });
+
+        document.getElementById('timelineModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeTimelineModal();
+            }
+        });
+
+        // Initialize price calculation
+        updatePrice();
+
+        // Add some interactive glitch effects
+        setInterval(() => {
+            const glitchElements = document.querySelectorAll('.glitch-text');
+            glitchElements.forEach(el => {
+                el.style.animation = 'none';
+                setTimeout(() => {
+                    el.style.animation = 'glitch 3s infinite';
+                }, 10);
+            });
+        }, 10000);
+    </script>
+</body>
+</html>
